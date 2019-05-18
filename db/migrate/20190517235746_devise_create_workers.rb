@@ -6,6 +6,11 @@ class DeviseCreateWorkers < ActiveRecord::Migration[5.2]
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
+      t.string :name,               null: false
+      t.string :last_name,          null: false
+      t.string :gender,             null: false
+      t.string :phone,              null: true
+      
 
       ## Recoverable
       t.string   :reset_password_token
