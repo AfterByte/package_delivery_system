@@ -31,6 +31,26 @@
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
 
+  <div class="field">
+    <%= f.label :name %> <br />
+    <%= f.text_field :name, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %> <br />
+    <%= f.text_field :last_name, autocomplete: "last_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %> <br />
+    <%= f.text_field :phone, autocomplete: "phone" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %> <br />
+    <%= f.text_field :gender, autocomplete: "gender" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
